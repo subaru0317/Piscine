@@ -1,0 +1,6 @@
+1. Error: PREPROC_BAD_INDENT   (line:   2, col:   1):      Bad preprocessor indentation
+[改善前]
+#define FT_H
+
+[改善後]
+# define FT_H

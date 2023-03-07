@@ -1,0 +1,45 @@
+1. Error: MISALIGNED_VAR_DECL  (line:   7, col:   9):      Misaligned variable declaration
+[改善前]
+int	a;
+int b;
+int c;
+char	d;
+[改善後]
+int		a;
+int		b;
+int		c;
+char	d;
+
+2. 関数名は正しいか
+3. 変数名にダブりはないか（特に引数に注意
+
+4. Error: NL_AFTER_VAR_DECL    (line:  10, col:   1):      Variable declarations must be followed by a newline
+[改善前]
+char	str[3];
+int		i;
+int		j;
+int		k;
+i = 0;
+j = 1;
+k = 2;
+[改善後]（改行に余計なスペースが入っていないように注意する）
+char	str[3];
+int		i;
+int		j;
+int		k;
+（改行）
+i = 0;
+j = 1;
+k = 2;
+
+5. Error: SPACE_AFTER_KW       (line:  24, col:  25):      Missing space after keyword
+[改善前]
+break;
+[改善後]
+break ;
+
+6. Error: NO_SPC_AFR_PAR       (line:  31, col:  20):      Extra space after parenthesis (brace/bracket)
+[改善前]
+if ( i == 7 && j == 8 && k == 9 )
+[改善後]
+if (i == 7 && j == 8 && k == 9)
